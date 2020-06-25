@@ -5,14 +5,15 @@
 variable1 = 20
 variable2 = 30
 
-print(variable1, variable2)
+print("Вывожу на экран переменные: ", variable1, ",", variable2)
+print(" ")
 
 variable1 = input("Укажите ваш адрес >>> ")
 variable2 = int(input("Сколько лет вы живете по этому адресу? >>> "))
 
 print("Мой адрес: ", variable1)
 print("Я живу там уже ", variable2, "лет.")
-
+print(" ")
 
 # 2. Пользователь вводит время в секундах.
 # Переведите время в часы, минуты и секунды и выведите в формате чч:мм:сс.
@@ -26,7 +27,7 @@ time_secs = user_time % div
 time_mins = (user_time // div) - (time_hrs * div)
 
 print("{} : {} : {}".format(time_hrs, time_mins, time_secs))
-
+print(" ")
 
 # 3. Узнайте у пользователя число n. Найдите сумму чисел n + nn + nnn.
 # Например, пользователь ввёл число 3. Считаем 3 + 33 + 333 = 369.
@@ -34,8 +35,8 @@ print("{} : {} : {}".format(time_hrs, time_mins, time_secs))
 user_number = input("Укажите произвольную цифру от 0 до 9 >>> ")
 user_sum = int(user_number) + int(user_number + user_number) + int(user_number + user_number + user_number)
 
-print(user_number, user_sum)
-
+print("Число пользователя: ", user_number, ". Полученная сумма: ", user_sum)
+print(" ")
 
 # 4. Пользователь вводит целое положительное число. Найдите самую большую цифру в числе.
 # Для решения используйте цикл while и арифметические операции.
@@ -44,7 +45,7 @@ user_integer = input("Укажите произвольное число >>> ")
 user_int_index: int = len(user_integer) - 1
 user_digits = [user_digits for user_digits in user_integer]
 
-print(user_integer, user_int_index, user_digits)
+print("Число пользователя: ", user_integer, ". Числовая последовательность", user_digits)
 
 a = user_digits[user_int_index]
 
@@ -61,7 +62,7 @@ while True:
         continue
 
 print(a)
-
+print(" ")
 
 # 5. Запросите у пользователя значения выручки и издержек фирмы. Определите, с каким финансовым результатом работает фирма
 # (прибыль — выручка больше издержек, или убыток — издержки больше выручки). Выведите соответствующее сообщение.
@@ -84,7 +85,7 @@ elif profit == loss:
 
 else:
     print("Сожалею. Финансовым результат вашей фирмы отрицательный.")
-
+print(" ")
 
 # 6. Спортсмен занимается ежедневными пробежками. В первый день его результат составил a километров.
 # Каждый день спортсмен увеличивал результат на 10 % относительно предыдущего.
